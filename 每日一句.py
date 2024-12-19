@@ -7,6 +7,10 @@ from tkinter import ttk, font
 import ttkbootstrap
 from PIL import Image, ImageTk
 from io import BytesIO
+'''
+author:https://github.com/ashajia
+DateTime: 20241219
+'''
 
 # 从API获取数据
 def get_data_from_api(url, headers):
@@ -67,14 +71,14 @@ icon_photo = None
 hot_image = None
 hot_photo = None
 
-# 显示图片
+# 显示图片 https://github.com/ashajia
 image_label = ttk.Label(window)
 image_label.pack(side="bottom")
 
 # 显示热榜图片的弹窗
 def show_hot_image_popup(hot_photo):
     popup = ttkbootstrap.Toplevel(window)
-    popup.title("当前热榜")
+    popup.title("当前热榜 https://github.com/ashajia")
     
     # 获取屏幕尺寸
     screen_width = popup.winfo_screenwidth()
@@ -229,7 +233,7 @@ def refresh_data():
 refresh_button = ttk.Button(window, text="刷新", command=refresh_data, style="TButton")
 refresh_button.place(relx=0.95, rely=0.05, anchor="ne")
 
-# 创建热榜按钮
+# 创建热榜按钮 https://github.com/ashajia
 hot_button = ttk.Button(window, text="查看当前热榜", command=show_hot_news, style="TButton")
 hot_button.pack(side="bottom", pady=5)
 
